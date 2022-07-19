@@ -19,32 +19,32 @@ public class Person {
     public static class Builder {
         private Person person;
 
-        public Builder (String name){
+        public Builder(String name) {
             this.person = new Person();
             person.name = name;
         }
 
-        public Builder withFamilyName(String familyName){
+        public Builder withFamilyName(String familyName) {
             person.familyName = familyName;
             return this;
         }
 
-        public Builder withPatronymicName(String patronymicName){
+        public Builder withPatronymicName(String patronymicName) {
             person.patronymicName = patronymicName;
             return this;
         }
 
-        public Builder withAge(int age){
+        public Builder withAge(int age) {
             person.age = age;
             return this;
         }
 
-        public Builder withHobby(String hobby){
+        public Builder withHobby(String hobby) {
             person.hobby = hobby;
             return this;
         }
 
-        public Person build(){
+        public Person build() {
             return person;
         }
     }
