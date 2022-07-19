@@ -12,16 +12,16 @@ public class Person {
                 ", familyName='" + familyName + '\'' +
                 ", patronymicName='" + patronymicName + '\'' +
                 ", age=" + age +
-                ", hobby='" + hobby + '\'' +
+                ", hobby=" + hobby +
                 '}';
     }
 
     public static class Builder {
-        private Person person = new Person();
+        private Person person;
 
-        public Builder withName(String name){
+        public Builder (String name){
+            this.person = new Person();
             person.name = name;
-            return this;
         }
 
         public Builder withFamilyName(String familyName){
